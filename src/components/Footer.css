@@ -1,0 +1,29 @@
+.site-footer {
+  border-top: 1px solid #e5e7eb;
+  background: #faf7ff;
+  margin-top: 20px;
+}
+
+.footer__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 0;
+}
+
+.footer__menu {
+  display: flex;
+  gap: 16px;
+}
+
+.footer__menu a {
+  color: #111827;
+  text-decoration: none;
+  opacity: .8;
+  font-weight: 600;
+}
+
+.footer__menu a:hover {
+  opacity: 1;
+}

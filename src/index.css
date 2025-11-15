@@ -1,0 +1,7 @@
+/* Removed because file does not exist and causes compile error:
+#highlights:after,
+#highlights:before {
+  background: url("./assets/wave.svg");
+  ...
+}
+*/
