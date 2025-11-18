@@ -1,27 +1,48 @@
-import { Link } from "react-router-dom";
-import "./Navbar.css";
+// src/components/Navbar.jsx
+import React from "react";
+import { NavLink } from "react-router-dom";
 
-export default function Navbar() {
+function Navbar() {
   return (
-    <header className="nav">
-      <div className="container nav__row">
-        <Link className="brand" to="/">
-          <span className="brand__mark"></span>
-          <span className="brand__text">blinker</span>
-        </Link>
+    <header className="navbar">
+      <div className="navbar-inner">
+        <div className="navbar-brand">
+          <span className="navbar-logo-dot" />
+          <span className="navbar-logo-text">blinker</span>
+        </div>
 
-        <nav className="menu">
-          <Link to="/" className="menu__link">
+        <nav className="nav-links">
+          <NavLink
+            to="/"
+            end
+            className={({ isActive }) =>
+              isActive ? "nav-link nav-link-active" : "nav-link"
+            }
+          >
             Home
-          </Link>
-          <Link to="/browse" className="menu__link">
+          </NavLink>
+
+          <NavLink
+            to="/find-your-car"
+            className={({ isActive }) =>
+              isActive ? "nav-link nav-link-active" : "nav-link"
+            }
+          >
             Find your car
-          </Link>
-          <Link to="/contact" className="btn btn--pill">
+          </NavLink>
+
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              isActive ? "nav-link nav-link-active" : "nav-link"
+            }
+          >
             Contact
-          </Link>
+          </NavLink>
         </nav>
       </div>
     </header>
   );
 }
+
+export default Navbar;

@@ -1,23 +1,28 @@
 // src/App.jsx
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
 import Footer from "./components/Footer";
-import Browse from "./pages/Browse";
-import Contact from "./pages/Contact";
+import HomePage from "./pages/HomePage";
+import FindCarPage from "./pages/FindCarPage";
+import ContactPage from "./pages/ContactPage";
 
-export default function App() {
+function App() {
   return (
-    <Router>
+    <div className="app">
       <Navbar />
 
-      <Routes>
-        <Route path="/" element={<Hero />} />
-        <Route path="/browse" element={<Browse />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <main className="main-content">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/find-your-car" element={<FindCarPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
+      </main>
 
       <Footer />
-    </Router>
+    </div>
   );
 }
+
+export default App;

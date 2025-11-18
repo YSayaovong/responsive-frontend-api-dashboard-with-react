@@ -1,18 +1,14 @@
-import { Link } from "react-router-dom";
-import "./Footer.css";
+// src/components/Footer.jsx
+import React from "react";
 
-export default function Footer() {
+function Footer() {
   return (
-    <footer className="site-footer">
-      <div className="container footer__row">
-        <p>© {new Date().getFullYear()} Blinker — All rights reserved.</p>
-
-        <nav className="footer__menu">
-          <Link to="/">Home</Link>
-          <Link to="/browse">Find your car</Link>
-          <Link to="/contact">Contact</Link>
-        </nav>
+    <footer className="footer">
+      <div className="footer-inner">
+        <p>© 2025 Blinker — All rights reserved.</p>
       </div>
     </footer>
   );
 }
+
+export default Footer;
