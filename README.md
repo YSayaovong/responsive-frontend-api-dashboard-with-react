@@ -84,20 +84,6 @@ Creates an optimized `build` directory ready for deployment.
 
 ---
 
-## Recruiter / Hiring Manager Notes
-
-This project demonstrates:
-
-- Strong React fundamentals  
-- Real-world API consumption from a frontend context  
-- Ability to design clean, responsive interfaces  
-- Component-driven architecture  
-- Familiarity with modern JavaScript and React Hooks  
-
-Perfect for roles such as **Frontend Engineer**, **React Developer**, or **UI Engineer**.
-
----
-
 ## Potential Enhancements
 
 - Add charts or visualization components  
